@@ -1,0 +1,78 @@
+.movieRowWrapper ul li {
+  list-style: none;
+}
+
+.movieRowWrapper {
+  position: relative;
+  
+  overflow-x: hidden;
+  margin-bottom: 30px;
+}
+
+.movieRowWrapper h2 {
+  margin-bottom: 4px;
+}
+
+.movieRowWrapper .listArea {
+  display: flex;
+}
+
+.movieRowWrapper .listItem {
+  width: 150px;
+}
+
+.movieRowWrapper .listItem img {
+  width: 100%;
+  cursor: pointer;
+  transform: scale(.9);
+  transition: transform ease-in .2s;
+}
+
+.movieRowWrapper .listItem img:hover {
+  transform: scale(.98);
+}
+
+.movieRowWrapper .arrowLeft,
+.movieRowWrapper .arrowRight {
+  position: absolute;
+  width: 40px;
+  height: 225px;
+  background-color: rgba(0,0,0,.6);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0;
+  transition: all ease-in-out .3s;
+}
+
+.movieRowWrapper .arrowLeft {
+    left: 0;
+}
+
+.movieRowWrapper .arrowRight {
+  right: 0;
+}
+
+.movieRowWrapper:hover .arrowLeft,
+.movieRowWrapper:hover .arrowRight {
+  opacity: 1;
+}
+
+.listArea {
+  transition: all ease .5s;
+}
+
+@media (max-width: 760px) {
+  .movieRowWrapper .arrowLeft,
+  .movieRowWrapper .arrowRight {
+    opacity: 1;
+  }
+  
+  .movieRowWrapper h2 {
+    padding-left: 10px;
+  }
+  
+}

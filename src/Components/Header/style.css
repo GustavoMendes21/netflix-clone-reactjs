@@ -1,0 +1,48 @@
+header {
+  padding: 0 60px;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999999;
+  
+  height: 70px;
+
+  margin: 0 auto;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: transparent;
+
+  transition: background-color ease-in-out .2s;
+}
+
+header.black {
+  background-color: #141414;
+}
+
+header .logo {
+  height: 30px;
+}
+
+header .logo img {
+  height: 100%;
+}
+
+header .userIcon {
+  margin-right: 6px;
+  height: 35px;
+}
+
+header .userIcon img {
+  height: 100%;
+}
+
+@media (max-width: 760px) {
+  header {
+    padding: 0 10px;
+  }
+}

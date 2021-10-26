@@ -71,7 +71,24 @@ export default {
         items: await getItems(`/discover/movie?with_genres=99&language=pt-BR&api_key=${API_KEY}`)
 
       },
-      
     ]
+  },
+  getMovieInfo: async (id, type) => {
+    let info = {}
+
+    if(id) {
+      switch(type) {
+        case 'movie ':
+          info = await getItems(`/movie/${id}?language=pt-BR&api_key=${API_KEY}`)
+        break;
+        case 'tv': 
+          info = await getItems(`/tv/${id}?language=pt-BR&api_key=${API_KEY}`)
+        break
+        default :
+          info = null
+      }
+    }
+
+    return info
   }
 }

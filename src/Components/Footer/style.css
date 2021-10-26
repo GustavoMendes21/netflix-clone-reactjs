@@ -1,0 +1,23 @@
+.footerWrapper a {
+  text-decoration: none;
+  color: #46d369;
+}
+
+.footerWrapper a:hover {
+  font-weight: bold;  
+}
+
+.footerWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerWrapper h3 {
+  font-weight: normal;
+}
+
+.footerWrapper > p {
+  margin: 4px 0;
+}

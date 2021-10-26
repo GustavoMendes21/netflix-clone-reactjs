@@ -1,0 +1,15 @@
+body {
+  background-color: #111;
+  color: #fff;
+}
+
+.page {
+  padding-left: 60px;
+  margin: 0 auto;
+}
+
+@media (max-width: 760px) {
+  .page {
+    padding: 0;
+  }
+}
