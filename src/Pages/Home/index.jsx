@@ -15,21 +15,24 @@ export function Home() {
   const [featureData, setFeatureData] = useState(null)
 
   useEffect(() => {
-    const loadAll = async () => {
-      const list = await api.getHomeList()
-      setMovieList(list)
-      
-      let originalsCategory = list.filter(item => item.slug === 'originals')
+    api.getHomeList().then(list => setMovieList(list))
+  }, [])
+
+  useEffect(() => {
+    if(movieList.length > 0) {
+      let originalsCategory = movieList.filter(item => item.slug === 'originals')
       let randomChosen = Math.floor(Math.random() * (originalsCategory[0].items.results.length) - 1)
       let chosen = originalsCategory[0].items.results[randomChosen]
-      let chosenInfo = await api.getMovieInfo(chosen.id, 'tv')
       
-      setFeatureData(chosenInfo)
+      
+      if(chosen) {
+        api.getMovieInfo(chosen.id, 'tv').then(info => setFeatureData(info))
+      }else{
+        let chosen = originalsCategory[0].items.results[0]
+        api.getMovieInfo(chosen.id, 'tv').then(info => setFeatureData(info))
+      }
     }
-    
-
-    loadAll()
-  }, [])
+  }, [movieList])
 
   
   return (
