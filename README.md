@@ -1,126 +1,69 @@
 <h1 align="center">
-	<!-- <img alt="Logo" src=".github/logo.png" width="200px" /> -->
-  Application Logo
+	<img alt="Logo" src="https://github.com/GustavoMendes21/netflix-clone-reactjs/blob/main/public/logo512.png" width="200px" />
+<!--   Application Logo -->
 </h1>
 
 <h3 align="center">
-  Title
+  Clone Netflix
 </h3>
 
-<p align="center">Short slogan</p>
+<p align="center">Clone da home da Netflix com ReactJs</p>
 
 <p align="center">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/EliasGcf/readme-template">
+  <img alt="GitHub top language" src="https://img.shields.io/static/v1?label=Language&message=Javascript&color=1E90FF&style=for-the-badge>&logo=JavaScript">
 
   <a href="https://www.linkedin.com/in/eliasgcf/">
-    <img alt="Made by" src="https://img.shields.io/badge/made%20by-Elias%20Gabriel-gree">
+    <img alt="Made by" src="https://img.shields.io/static/v1?label=Made By&message=Gustavo Mendes&color=1E90FF&style=for-the-badge>&logo=linkedin">
   </a>
-  
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/EliasGcf/readme-template">
-  
-  <a href="https://github.com/EliasGcf/readme-template/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/EliasGcf/readme-template">
-  </a>
-  
-  <a href="https://github.com/EliasGcf/readme-template/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/EliasGcf/readme-template">
-  </a>
-  
-  <img alt="GitHub" src="https://img.shields.io/github/license/EliasGcf/readme-template">
 </p>
 
 <p align="center">
-  <a href="#-about-the-project">About the project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-getting-started">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-how-to-contribute">How to contribute</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-license">License</a>
+  <a href="#-about-the-project">Sobre o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-technologies">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
-## 👨🏻‍💻 About the project
+## 👨🏻‍💻 Sobre o projeto
 
-- <p style="color: red;">Brief explanation about the project</p>
+<p style="color: red;">
+O projeto foi feito por meio do <a href="https://www.youtube.com/watch?v=tBweoUiMsDg">tutorial do professor Bonieky Lacerda</a> com o 
+objetivo de estudar conceitos do Reactjs. Foi consumida a API do The Movie Database para obter os dados.
+</p>
 
-To see the **api**, click here: [PROJECT_NAME Rest API](https://github/eliasgcf/readme-template)</br>
-To see the **mobile client**, click here: [PROJECT_NAME Mobile](https://github/eliasgcf/readme-template)
+<p style="color: red;">
+<h2>Conceitos aprendidos: </h2>
+<ul>
+	<li>Manipulação da DOM</li>
+	<li>React Hooks: useState, useEffect</li>
+	<li>Consumo de Api REST</li>
+	<li>Responsividade</li>
+	
+</ul>
+</p>
 
-## 🚀 Technologies
+## 🚀 Tecnologias
 
 Technologies that I used to develop this web client
 
 - [ReactJS](https://reactjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [React Router DOM](https://reacttraining.com/react-router/)
+<!-- - [TypeScript](https://www.typescriptlang.org/) -->
+<!-- - [React Router DOM](https://reacttraining.com/react-router/) -->
 - [React Icons](https://react-icons.netlify.com/#/)
-- [UnForm](https://unform.dev/) [💜](https://rocketseat.com.br/)
-- [Yup](https://github.com/jquense/yup)
-- [Styled Components](https://styled-components.com/)
-- [Polished](https://github.com/styled-components/polished)
+<!-- - [UnForm](https://unform.dev/) [💜](https://rocketseat.com.br/) -->
+<!-- - [Yup](https://github.com/jquense/yup) -->
+<!-- - [Styled Components](https://styled-components.com/) -->
+<!-- - [Polished](https://github.com/styled-components/polished) -->
 - [Axios](https://github.com/axios/axios)
-- [Husky](https://github.com/typicode/husky)
-- [Commitlint](https://github.com/conventional-changelog/commitlint)
-- [Commitizen](https://github.com/commitizen/cz-cli)
-- [Eslint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
-- [EditorConfig](https://editorconfig.org/)
+<!-- - [Husky](https://github.com/typicode/husky) -->
+<!-- - [Commitlint](https://github.com/conventional-changelog/commitlint) -->
+<!-- - [Commitizen](https://github.com/commitizen/cz-cli) -->
+<!-- - [Eslint](https://eslint.org/) -->
+<!-- - [Prettier](https://prettier.io/) -->
+<!-- - [EditorConfig](https://editorconfig.org/) -->
 
-## 💻 Getting started
+<h2>Desktop:</h2>
+<img src="https://github.com/GustavoMendes21/netflix-clone-reactjs/blob/main/public/screenshot-rocks.png"></img>
+<h2>Mobile:</h2>
 
-### Requirements
+<img src="https://github.com/GustavoMendes21/netflix-clone-reactjs/blob/main/public/screenshot-rocks-phone.png"></img>
 
-- Have this application's [API](https://github.com/EliasGcf/gobarber-api) running
 
-**Clone the project and access the folder**
-
-```bash
-$ git clone https://github.com/EliasGcf/NOME_DO_REPO.git && cd NOME_DO_REPO
-```
-
-**Follow the steps below**
-
-```bash
-# Install the dependencies
-$ yarn
-
-# Be sure the file 'src/services/api.ts' have the IP to your API
-
-# Start the client
-$ yarn start
-```
-
-## 🤔 How to contribute
-
-**Make a fork of this repository**
-
-```bash
-# Fork using GitHub official command line
-# If you don't have the GitHub CLI, use the web site to do that.
-
-$ gh repo fork EliasGcf/NOME_DO_REPO
-```
-
-**Follow the steps below**
-
-```bash
-# Clone your fork
-$ git clone your-fork-url && cd NOME_DO_REPO
-
-# Create a branch with your feature
-$ git checkout -b my-feature
-
-# Make the commit with your changes
-$ git commit -m 'feat: My new feature'
-
-# Send the code to your remote branch
-$ git push origin my-feature
-```
-
-After your pull request is merged, you can delete your branch
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Made with 💜 &nbsp;by Elias Gabriel 👋 &nbsp;[See my linkedin](https://www.linkedin.com/in/eliasgcf/)
